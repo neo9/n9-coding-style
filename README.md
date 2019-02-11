@@ -6,14 +6,14 @@ TSLint coding style inspired from [Airbnb coding style](https://github.com/airbn
 ## Usage
 
 ```bash
-yarn add tslint n9-coding-style --dev
+yarn add tslint @neo9/n9-coding-style --dev
 ```
 
 Add a `tslint.json` file in the root directory.
 
 ```json
 {
-  "extends": "n9-coding-style"
+  "extends": "@neo9/n9-coding-style"
 }
 ```
 
