@@ -5,7 +5,7 @@ module.exports = {
   ],
   'rules': {
     'no-shadowed-variable': true,
-    'no-any': true,
+    'no-implicit-any': true,
     'no-console': [
       true,
       'debug',
