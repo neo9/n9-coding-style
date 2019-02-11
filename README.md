@@ -17,3 +17,11 @@ Add a `tslint.json` file in the root directory.
 }
 ```
 
+## Auto fix errors
+
+TsLint can sometimes auto fix errors.
+You can use the local binary.
+
+```bash
+./node_modules/.bin/tslint --fix
+```
