@@ -1,0 +1,19 @@
+{
+  "name": "n9-coding-style",
+  "version": "1.0.0",
+  "main": "tslint.js",
+  "version": "0.0.1",
+  "license": "MIT",
+  "dependencies": {
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-eslint-rules": "^5.4.0"
+  },
+  "devDependencies": {
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.1"
+  },
+   "peerDependencies": {
+    "tslint": "^5.1.0",
+    "typescript": "^2.1.0 || ^3.3.0"
+  }
+}
