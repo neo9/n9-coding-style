@@ -1,6 +1,6 @@
 {
   "name": "@neo9/n9-coding-style",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "tslint.js",
   "license": "MIT",
   "repository": {
