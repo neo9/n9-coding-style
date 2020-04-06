@@ -2,7 +2,6 @@
 
 TSLint coding style inspired from [Airbnb coding style](https://github.com/airbnb/javascript).
 
-
 ## Usage
 
 ```bash
@@ -13,7 +12,7 @@ Add a `tslint.json` file in the root directory.
 
 ```json
 {
-  "extends": "@neo9/n9-coding-style"
+	"extends": "@neo9/n9-coding-style"
 }
 ```
 
