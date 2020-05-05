@@ -1,6 +1,6 @@
 {
   "name": "@neo9/n9-coding-style",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "tslint.yaml",
   "license": "MIT",
   "repository": {
@@ -15,7 +15,7 @@
     "tslint": "^5.12.1",
     "typescript": "^3.3.1"
   },
-   "peerDependencies": {
+  "peerDependencies": {
     "tslint": "^5.1.0",
     "typescript": "^2.1.0 || ^3.3.0"
   }
