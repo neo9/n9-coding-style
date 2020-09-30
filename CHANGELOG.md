@@ -1,3 +1,5 @@
+# [2.0.0](https://github.com/neo9/n9-coding-style/compare/2.0.0-beta.0...2.0.0) (2020-09-30)
+
 # [2.0.0-beta.0](https://github.com/neo9/n9-coding-style/compare/v1.1.1...2.0.0-beta.0) (2020-09-30)
 
 
