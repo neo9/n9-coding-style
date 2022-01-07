@@ -12,7 +12,7 @@ Add a `tslint.json` file in the root directory.
 
 ```json
 {
-  "extends": "@neo9/n9-coding-style"
+	"extends": "@neo9/n9-coding-style"
 }
 ```
 

@@ -1,0 +1,197 @@
+parser: '@typescript-eslint/parser'
+parserOptions:
+  tsconfigRootDir: ./
+  project:
+    - tsconfig.json
+plugins:
+  - '@typescript-eslint'
+  - simple-import-sort
+  - rxjs
+extends:
+  - eslint:recommended
+  - plugin:@typescript-eslint/eslint-recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:@typescript-eslint/recommended-requiring-type-checking
+  - plugin:jsdoc/recommended
+  - airbnb-base
+  - plugin:prettier/recommended
+  - plugin:rxjs/recommended
+rules:
+  '@typescript-eslint/array-type':
+    - error
+    - default: array
+    # any management
+  '@typescript-eslint/no-explicit-any':
+    - off
+  '@typescript-eslint/no-unsafe-argument':
+    - off
+
+  '@typescript-eslint/member-ordering':
+    - error
+    - default:
+        # Index signature
+        # No scope for index signature. See above.
+        # Fields
+        - static-field # = ["public-static-field", "protected-static-field", "private-static-field"]
+        - static-get # = ["public-static-get", "protected-static-get", "private-static-get"]
+        - static-set # = ["public-static-set", "protected-static-set", "private-static-set"]
+        - static-method # = ["public-static-method", "protected-static-method", "private-static-method"]
+        - abstract-field # = ["public-abstract-field", "protected-abstract-field", "private-abstract-field"]
+        - instance-field # = ["public-instance-field", "protected-instance-field", "private-instance-field"]
+        # Constructors
+        - constructor # = ["public-constructor", "protected-constructor", "private-constructor"]
+        # Getters
+        - abstract-get # = ["public-abstract-get", "protected-abstract-get", "private-abstract-get"]
+        - instance-get # = ["public-instance-get", "protected-instance-get", "private-instance-get"]
+        # Setters
+        - abstract-set # = ["public-abstract-set", "protected-abstract-set", "private-abstract-set"]
+        - instance-set # = ["public-instance-set", "protected-instance-set", "private-instance-set"]
+        # Methods
+        - abstract-method # = ["public-abstract-method", "protected-abstract-method", "private-abstract-method"]
+        - instance-method # = ["public-instance-method", "protected-instance-method", "private-instance-method"]
+  max-classes-per-file:
+    - error
+    - max: 5
+      ignoreExpressions: false
+  '@typescript-eslint/no-inferrable-types':
+    - error
+    - ignoreParameters: true
+      ignoreProperties: true
+  '@typescript-eslint/typedef':
+    - error
+    - arrayDestructuring: false
+      arrowParameter: true
+      memberVariableDeclaration: true
+      objectDestructuring: true
+      parameter: true
+      propertyDeclaration: true
+      variableDeclaration: false
+      variableDeclarationIgnoreFunction: true
+  lines-between-class-members: # force line between fields declaration too
+    - off
+  '@typescript-eslint/lines-between-class-members': # force line between fields declaration too
+    - off
+  complexity:
+    - error
+    - max: 21
+  no-loop-func:
+    - off
+  '@typescript-eslint/no-loop-func':
+    - error
+  '@typescript-eslint/triple-slash-reference':
+    - error
+    - path: never
+      types: never
+      lib: never
+  camelcase:
+    - off
+  '@typescript-eslint/naming-convention': # https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/naming-convention.md
+    - error
+    - selector: default
+      format: ['camelCase']
+      leadingUnderscore: 'allow'
+      trailingUnderscore: 'forbid'
+    - selector: memberLike
+      modifiers: ['static']
+      format: ['UPPER_CASE']
+    - selector: typeLike
+      format: ['PascalCase']
+  sort-imports:
+    - off # disable eslint default sort import rule because it is on import name and not on import files
+  simple-import-sort/imports:
+    - error
+  object-shorthand:
+    - error
+    - always
+  'jsdoc/require-jsdoc':
+    - off
+  'jsdoc/require-param-description':
+    - off
+  'jsdoc/require-returns-description':
+    - off
+  'jsdoc/require-param-type':
+    - off
+  'jsdoc/require-returns-type':
+    - off
+  no-extra-label:
+    - error
+  no-labels:
+    - error
+    - allowLoop: true
+      allowSwitch: false
+  no-restricted-syntax:
+    - error
+    - selector: WithStatement
+      message: "'with' is disallowed in strict mode because it makes code impossible to predict and optimize"
+    - selector: ForInStatement
+      message: for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.
+  no-param-reassign:
+    - error
+  no-continue:
+    - off
+  no-bitwise:
+    - error
+  no-eq-null:
+    - error
+  no-fallthrough:
+    - off
+  no-unused-expressions:
+    - off
+  '@typescript-eslint/no-unused-expressions':
+    - error
+  no-redeclare:
+    - off
+  '@typescript-eslint/no-redeclare':
+    - error
+    - ignoreDeclarationMerge: false
+  one-var:
+    - error
+    - initialized: never
+      uninitialized: never
+  one-var-declaration-per-line:
+    - error
+    - always
+  radix:
+    - error
+    - always
+  '@typescript-eslint/prefer-function-type':
+    - error
+  '@typescript-eslint/consistent-type-assertions':
+    - error
+  no-invalid-this:
+    - off
+  '@typescript-eslint/no-invalid-this':
+    - error
+  no-undef-init:
+    - error
+  prefer-arrow-callback:
+    - error
+  '@typescript-eslint/unified-signatures':
+    - error
+  '@typescript-eslint/no-unnecessary-boolean-literal-compare':
+    - error
+  curly:
+    - error
+  no-return-await:
+    - off
+
+  # Add rxjs classic rules
+  rxjs/no-async-subscribe:
+    - error
+  rxjs/no-ignored-observable:
+    - error
+  rxjs/no-ignored-subscription: # doesn't work to push in subscription array
+    - off
+  rxjs/no-nested-subscribe:
+    - error
+  rxjs/no-unbound-methods:
+    - error
+  rxjs/throw-error:
+    - error
+
+# missing rules not found in eslint :
+# - object-shorthand-properties-first
+
+env:
+  browser: true,
+  node: true,
