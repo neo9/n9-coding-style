@@ -1,3 +1,14 @@
+# [3.0.0-alpha.0](https://github.com/neo9/n9-coding-style/compare/2.0.0...3.0.0-alpha.0) (2022-01-10)
+
+
+### eslint
+
+* Replace tslint with eslint with tests ([607c640](https://github.com/neo9/n9-coding-style/commit/607c64045e5ea1972ddb0788424574e85fa525f7))
+
+### yarn
+
+* Update dependencies ([6108983](https://github.com/neo9/n9-coding-style/commit/6108983c803c908341a16230962ca43297881b85))
+
 # [2.0.0](https://github.com/neo9/n9-coding-style/compare/2.0.0-beta.0...2.0.0) (2020-09-30)
 
 # [2.0.0-beta.0](https://github.com/neo9/n9-coding-style/compare/v1.1.1...2.0.0-beta.0) (2020-09-30)
