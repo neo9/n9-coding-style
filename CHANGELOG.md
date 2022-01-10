@@ -1,3 +1,10 @@
+# [3.0.0-alpha.1](https://github.com/neo9/n9-coding-style/compare/3.0.0-alpha.0...3.0.0-alpha.1) (2022-01-10)
+
+
+### yarn
+
+* Fix eslint-plugin-simple-import-sort location to dependencies ([4e7ce33](https://github.com/neo9/n9-coding-style/commit/4e7ce33b9a92345ec6050eb763a57e92b7f11210))
+
 # [3.0.0-alpha.0](https://github.com/neo9/n9-coding-style/compare/2.0.0...3.0.0-alpha.0) (2022-01-10)
 
 
