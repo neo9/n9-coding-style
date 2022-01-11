@@ -13,7 +13,6 @@ test.serial(`Check rxjs rules`, async (t) => {
 			line: 13,
 			ruleIds: [
 				'@typescript-eslint/await-thenable', // Unexpected `await` of a non-Promise (non-"Thenable") value.
-				'@typescript-eslint/no-misused-promises', // Promise returned in function argument where a void return was expected.
 				'rxjs/no-async-subscribe', // Passing async functions to subscribe is forbidden.
 			],
 		},

@@ -197,7 +197,8 @@ test.serial(`load config index.ts in ESLint to validate all rules are correct`, 
 			ruleIds: [
 				'@typescript-eslint/no-unused-expressions', // Expected an assignment or function call and instead saw an expression.
 				'no-caller', // Avoid arguments.caller.
-				'@typescript-eslint/no-unsafe-member-access', // Unsafe member access .caller on an `any` value.
+				// no-unsafe-member-access disabled, too restrictif
+				// '@typescript-eslint/no-unsafe-member-access', // Unsafe member access .caller on an `any` value.
 				'no-undef', // 'arguments' is not defined.
 			],
 		},
@@ -242,13 +243,14 @@ test.serial(`load config index.ts in ESLint to validate all rules are correct`, 
 		{
 			line: 127,
 			ruleIds: [
-				'no-shadow', // 'shadowVariable' is already declared in the upper scope on line 125 column 7.
+				'@typescript-eslint/no-shadow', // 'shadowVariable' is already declared in the upper scope on line 125 column 7.
 			],
 		},
 		{
 			line: 133,
 			ruleIds: [
-				'@typescript-eslint/no-unsafe-member-access', // Unsafe member access ['something'] on an `any` value.
+				// no-unsafe-member-access disabled, too restrictif
+				// '@typescript-eslint/no-unsafe-member-access', // Unsafe member access ['something'] on an `any` value.
 				'dot-notation', // ["something"] is better written in dot notation
 			],
 		},

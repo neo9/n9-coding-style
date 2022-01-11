@@ -10,11 +10,11 @@ export type A = {
 };
 
 class AClassName {
-	private static A_FIELD: string = '';
+	private static aField: string = '';
 	public static ANOTHER_FIELD: string = '';
 
 	public static A_FUNCTION_STATIC_NAME(): string {
-		return this.A_FIELD + this.ANOTHER_FIELD;
+		return this.aField + this.ANOTHER_FIELD;
 	}
 
 	private aField: string = '';
