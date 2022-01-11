@@ -1,3 +1,10 @@
+# [3.0.0-alpha.3](https://github.com/neo9/n9-coding-style/compare/3.0.0-alpha.2...3.0.0-alpha.3) (2022-01-11)
+
+
+### rules
+
+* Review rules against n9-node-routing ([b3f347c](https://github.com/neo9/n9-coding-style/commit/b3f347c44ae7918fc1e98fd21e3fceae142604bb))
+
 # [3.0.0-alpha.2](https://github.com/neo9/n9-coding-style/compare/3.0.0-alpha.1...3.0.0-alpha.2) (2022-01-11)
 
 
