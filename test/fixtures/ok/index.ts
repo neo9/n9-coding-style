@@ -32,7 +32,7 @@ class AClassName {
 	}
 }
 
-new AClassName().anInstanceFunctionName();
+new AClassName().anInstanceFunctionName('1', '2');
 AClassName.A_FUNCTION_STATIC_NAME();
 
 mainLoop: for (const value of Object.keys({})) {
@@ -49,3 +49,13 @@ function fctWithCallBack(fct: () => number) {
 }
 
 fctWithCallBack(() => 1);
+
+class AClass2 {
+	constructor(private prop: string) {}
+
+	getProp(): string {
+		return this.prop;
+	}
+}
+
+new AClass2('s').getProp();
