@@ -53,9 +53,10 @@ fctWithCallBack(() => 1);
 class AClass2 {
 	constructor(private prop: string) {}
 
-	getProp(): string {
-		return this.prop;
+	setProp(param: { a: string }) {
+		param.a = '45';
+		this.prop = param.a;
 	}
 }
 
-new AClass2('s').getProp();
+new AClass2('s').setProp({ a: '22' });
