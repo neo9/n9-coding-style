@@ -36,13 +36,13 @@ test.serial(`load config index.ts in ESLint to validate all rules are correct`, 
 			line: 10,
 			ruleIds: [
 				'@typescript-eslint/no-unused-vars', // 'constant' is assigned a value but never used.
-				'no-unused-vars', // 'constant' is assigned a value but never used.
 			],
 		},
 		{
 			line: 12,
 			ruleIds: [
 				'@typescript-eslint/typedef', // Expected a to have a type annotation.
+				'@typescript-eslint/explicit-function-return-type', // Expected suffix to have a type annotation
 			],
 		},
 		{
@@ -53,10 +53,15 @@ test.serial(`load config index.ts in ESLint to validate all rules are correct`, 
 			],
 		},
 		{
+			line: 19,
+			ruleIds: [
+				'@typescript-eslint/explicit-function-return-type', // Expected suffix to have a type annotation
+			],
+		},
+		{
 			line: 17,
 			ruleIds: [
 				'@typescript-eslint/no-unused-vars', // 'constant' is assigned a value but never used.
-				'no-unused-vars', // 'constant' is assigned a value but never used.
 			],
 		},
 		{
@@ -75,7 +80,6 @@ test.serial(`load config index.ts in ESLint to validate all rules are correct`, 
 			line: 32,
 			ruleIds: [
 				'@typescript-eslint/no-unused-vars', // 'constant' is assigned a value but never used.
-				'no-unused-vars', // 'constant' is assigned a value but never used.
 				'@typescript-eslint/array-type', // Array type using 'Array<string>' is forbidden. Use 'string[]' instead.
 			],
 		},
@@ -146,25 +150,25 @@ test.serial(`load config index.ts in ESLint to validate all rules are correct`, 
 		{
 			line: 75,
 			ruleIds: [
-				'no-console', //'Unexpected console statement.
+				'no-console', // Unexpected console statement.
 			],
 		},
 		{
 			line: 76,
 			ruleIds: [
-				'no-console', //'Unexpected console statement.
+				'no-console', // Unexpected console statement.
 			],
 		},
 		{
 			line: 77,
 			ruleIds: [
-				'no-console', //'Unexpected console statement.
+				'no-console', // Unexpected console statement.
 			],
 		},
 		{
 			line: 78,
 			ruleIds: [
-				'no-console', //'Unexpected console statement.
+				'no-console', // Unexpected console statement.
 			],
 		},
 		{
@@ -193,13 +197,18 @@ test.serial(`load config index.ts in ESLint to validate all rules are correct`, 
 			],
 		},
 		{
+			line: 101,
+			ruleIds: [
+				'@typescript-eslint/explicit-function-return-type', // Expected suffix to have a type annotation
+			],
+		},
+		{
 			line: 102,
 			ruleIds: [
 				'@typescript-eslint/no-unused-expressions', // Expected an assignment or function call and instead saw an expression.
 				'no-caller', // Avoid arguments.caller.
 				// no-unsafe-member-access disabled, too restrictif
 				// '@typescript-eslint/no-unsafe-member-access', // Unsafe member access .caller on an `any` value.
-				'no-undef', // 'arguments' is not defined.
 			],
 		},
 		{
@@ -237,7 +246,6 @@ test.serial(`load config index.ts in ESLint to validate all rules are correct`, 
 			line: 125,
 			ruleIds: [
 				'@typescript-eslint/no-unused-vars', // 'constant' is assigned a value but never used.
-				'no-unused-vars', // 'constant' is assigned a value but never used.
 			],
 		},
 		{
@@ -337,6 +345,12 @@ test.serial(`load config index.ts in ESLint to validate all rules are correct`, 
 			line: 200,
 			ruleIds: [
 				'no-undef-init', // Disallow Initializing to undefined
+			],
+		},
+		{
+			line: 204,
+			ruleIds: [
+				'@typescript-eslint/explicit-function-return-type', // Expected suffix to have a type annotation
 			],
 		},
 		{

@@ -34,7 +34,7 @@ export default class Utils {
 				this.testTruthy(
 					t,
 					foundError,
-					`Error ${error.ruleId} line ${error.line} in file ${fullFileName} found`,
+					`Error ${error.ruleId} line ${error.line} in file ${fullFileName}:${error.line} found`,
 				);
 			}
 			for (const expectedError of expectedErrors) {
@@ -45,7 +45,7 @@ export default class Utils {
 					this.testTruthy(
 						t,
 						foundError,
-						`Error ${ruleId} line ${expectedError.line} in file ${fullFileName} found`,
+						`Error ${ruleId} line ${expectedError.line} in file ${fullFileName}:${expectedError.line} found`,
 					);
 				}
 			}

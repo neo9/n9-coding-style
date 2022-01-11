@@ -56,12 +56,12 @@ class A_Wrong_class_name {
 	public static anotherField: string = ''; // member ordering & naming wrong
 	public another_Field = ''; // typedef & naming wrong
 
-	public static aWrongFunctionStaticName() {
+	public static aWrongFunctionStaticName(): string {
 		// naming wrong
 		return this.A_FIELD + this.anotherField;
 	}
 
-	public a_Wrong_instance_Function_Name() {
+	public a_Wrong_instance_Function_Name(): string {
 		// naming wrong
 		return this.a_Field + this.another_Field;
 	}
@@ -123,7 +123,7 @@ AClassThatExtendAnother();
 eval('const a = 5;');
 
 const shadowVariable = 'no shadow';
-function print() {
+function print(): void {
 	const shadowVariable = 'shadow'; // TSLint will complain here.
 	getMessage(shadowVariable);
 }
@@ -219,14 +219,14 @@ getMessage(function fctCallback(l: string) {
 });
 
 function fctOverload(x: number);
-function fctOverload(x: string) {
+function fctOverload(x: string): void {
 	// should throw error unified-signatures : https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/unified-signatures.md
 	getMessage(x);
 }
 fctOverload(1);
 fctOverload('1');
 
-function functionParamReassign(p: number) {
+function functionParamReassign(p: number): void {
 	p = 10;
 	getMessage(p);
 }
@@ -239,9 +239,9 @@ if (m === true) {
 
 // prettier-ignore
 if(m)
-  h = 10; // az mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmsq dsq dssdq sdq dqs dsq dqsq ds qsd dsmqmdsqlqsqs
+  h = 10;
 
-function functionNoElseAfterReturn() {
+function functionNoElseAfterReturn(): number {
 	if (1 < h) {
 		// yoda: should be h < 1
 		return 1;

@@ -44,7 +44,7 @@ mainLoop: for (const value of Object.keys({})) {
 	}
 }
 
-function fctWithCallBack(fct: () => number) {
+function fctWithCallBack(fct: () => number): number {
 	return fct();
 }
 
@@ -53,7 +53,7 @@ fctWithCallBack(() => 1);
 class AClass2 {
 	constructor(private prop: string) {}
 
-	setProp(param: { a: string }) {
+	setProp(param: { a: string }): void {
 		param.a = '45';
 		this.prop = param.a;
 	}

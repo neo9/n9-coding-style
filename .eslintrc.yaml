@@ -25,7 +25,10 @@ rules:
     - off
   '@typescript-eslint/no-unsafe-argument':
     - off
-
+  no-unused-vars:
+    - off
+  '@typescript-eslint/no-unused-vars':
+    - error
   '@typescript-eslint/member-ordering':
     - error
     - default:
@@ -62,11 +65,11 @@ rules:
     - arrayDestructuring: false
       arrowParameter: false
       memberVariableDeclaration: true
-      objectDestructuring: true
+      objectDestructuring: false
       parameter: true
       propertyDeclaration: true
       variableDeclaration: false
-      variableDeclarationIgnoreFunction: true
+      variableDeclarationIgnoreFunction: false
   lines-between-class-members: # force line between fields declaration too
     - off
   '@typescript-eslint/lines-between-class-members': # force line between fields declaration too
@@ -180,6 +183,8 @@ rules:
     - error
   no-undef-init:
     - error
+  no-undef: # https://typescript-eslint.io/docs/linting/troubleshooting/#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
+    - off
   prefer-arrow-callback:
     - error
   '@typescript-eslint/unified-signatures':
@@ -265,13 +270,17 @@ rules:
   '@typescript-eslint/ban-ts-comment':
     - error
     - ts-ignore: allow-with-description
+  '@typescript-eslint/no-empty-interface':
+    - error
+  class-methods-use-this: # not usable in TS https://github.com/typescript-eslint/typescript-eslint/issues/1103
+    - off
+  '@typescript-eslint/explicit-function-return-type':
+    - error
+  no-useless-return:
+    - off
 
 # missing rules not found in eslint :
 # - object-shorthand-properties-first
-
-settings:
-  import/extensions:
-    - '.ts'
 
 env:
   browser: true,

@@ -7,15 +7,11 @@ test.serial(`load config index.ts in ESLint to validate all rules are correct`, 
 	const expectedErrors = [
 		{
 			line: 1,
-			ruleIds: [
-				'no-unused-vars',
-				'@typescript-eslint/no-unused-vars',
-				'simple-import-sort/imports',
-			],
+			ruleIds: ['@typescript-eslint/no-unused-vars', 'simple-import-sort/imports'],
 		},
 		{
 			line: 2,
-			ruleIds: ['no-unused-vars', '@typescript-eslint/no-unused-vars'],
+			ruleIds: ['@typescript-eslint/no-unused-vars'],
 		},
 	];
 	await Utils.checkErrors(t, 'sort-imports', expectedErrors);
