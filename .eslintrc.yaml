@@ -188,6 +188,16 @@ rules:
     - error
   rxjs/throw-error:
     - error
+  import/no-unresolved: # let's TypeScript do that
+    - off
+  no-useless-constructor:
+    - off
+  '@typescript-eslint/no-useless-constructor':
+    - error
+  no-empty-function:
+    - off
+  '@typescript-eslint/no-empty-function':
+    - error
 
 # missing rules not found in eslint :
 # - object-shorthand-properties-first
