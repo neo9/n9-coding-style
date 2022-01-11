@@ -4,7 +4,7 @@ class AClass {
 	/**
 	 * Missing param
 	 */
-	public commentedFunction(param1: string) {
+	public commentedFunction(param1: string): string {
 		return this.prefix + param1;
 	}
 
@@ -15,7 +15,7 @@ class AClass {
 	 * @param wrongParam
 	 * @returns
 	 */
-	public commentedFunction2(param1: string, param2?: { a: string }) {
+	public commentedFunction2(param1: string, param2?: { a: string }): string {
 		return this.prefix + param1 + param2.a;
 	}
 }
