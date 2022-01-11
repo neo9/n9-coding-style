@@ -1,3 +1,12 @@
+# [3.0.0-alpha.2](https://github.com/neo9/n9-coding-style/compare/3.0.0-alpha.1...3.0.0-alpha.2) (2022-01-11)
+
+
+### rules
+
+* Add rules to support empty functions and constructor in typescript ([880136f](https://github.com/neo9/n9-coding-style/commit/880136f166e62d5319b1cc57851f58fe94744002))
+* Allow params properties reassignment ([e5bd55f](https://github.com/neo9/n9-coding-style/commit/e5bd55feb657f40d9ed95326e30dbaad6064878c))
+* Review rules against n9-mongo-client ([9dca687](https://github.com/neo9/n9-coding-style/commit/9dca687030c894f84a447d6d47d252ae3e660ab9))
+
 # [3.0.0-alpha.1](https://github.com/neo9/n9-coding-style/compare/3.0.0-alpha.0...3.0.0-alpha.1) (2022-01-10)
 
 
