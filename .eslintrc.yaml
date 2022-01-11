@@ -60,7 +60,7 @@ rules:
   '@typescript-eslint/typedef':
     - error
     - arrayDestructuring: false
-      arrowParameter: true
+      arrowParameter: false
       memberVariableDeclaration: true
       objectDestructuring: true
       parameter: true
@@ -73,7 +73,7 @@ rules:
     - off
   complexity:
     - error
-    - max: 21
+    - max: 25
   no-loop-func:
     - off
   '@typescript-eslint/no-loop-func':
@@ -94,8 +94,13 @@ rules:
     - selector: memberLike
       modifiers: ['static']
       format: ['UPPER_CASE']
+    - selector: memberLike
+      modifiers: ['private', 'static']
+      format: ['camelCase']
     - selector: typeLike
       format: ['PascalCase']
+    - selector: enumMember
+      format: ['UPPER_CASE']
   sort-imports:
     - off # disable eslint default sort import rule because it is on import name and not on import files
   simple-import-sort/imports:
@@ -103,16 +108,26 @@ rules:
   object-shorthand:
     - error
     - always
-  'jsdoc/require-jsdoc':
+  jsdoc/require-jsdoc:
     - off
-  'jsdoc/require-param-description':
+  jsdoc/require-param-description:
     - off
-  'jsdoc/require-returns-description':
+  jsdoc/require-returns-description:
     - off
-  'jsdoc/require-param-type':
+  jsdoc/require-param-type:
     - off
-  'jsdoc/require-returns-type':
+  jsdoc/require-returns-type:
     - off
+  jsdoc/require-returns:
+    - off # Change is too big with tslint version of n9-coding-style
+  jsdoc/check-param-names:
+    - error
+    - checkRestProperty: false
+      checkDestructured: false
+  jsdoc/require-param:
+    - off # Change is too big with tslint version of n9-coding-style
+    #- checkRestProperty: false
+    #  checkDestructured: false
   no-extra-label:
     - error
   no-labels:
@@ -175,6 +190,8 @@ rules:
     - error
   no-return-await:
     - off
+  '@typescript-eslint/no-unsafe-assignment':
+    - off
 
   # Add rxjs classic rules
   rxjs/no-async-subscribe:
@@ -191,6 +208,17 @@ rules:
     - error
   import/no-unresolved: # let's TypeScript do that
     - off
+  import/extensions: # let's TypeScript do that
+    - off
+  import/prefer-default-export:
+    - off
+  import/no-extraneous-dependencies:
+    - error
+    - devDependencies:
+        - 'tests/**/*'
+        - 'test/**/*'
+        - '**/*.test.*'
+        - '**/*.spec.*'
   no-useless-constructor:
     - off
   '@typescript-eslint/no-useless-constructor':
@@ -199,9 +227,51 @@ rules:
     - off
   '@typescript-eslint/no-empty-function':
     - error
+  default-param-last:
+    - off
+  '@typescript-eslint/default-param-last':
+    - error
+  no-underscore-dangle: # disable to allow to read _id on mongo objects
+    - off
+  consistent-return:
+    - off
+  '@typescript-eslint/unbound-method':
+    - off
+  '@typescript-eslint/no-unsafe-member-access':
+    - off
+  no-await-in-loop:
+    - off
+  prefer-destructuring:
+    - off
+  '@typescript-eslint/no-unsafe-call':
+    - off
+  '@typescript-eslint/no-unsafe-return':
+    - off
+  '@typescript-eslint/promise-function-async':
+    - error
+  '@typescript-eslint/no-misused-promises':
+    - error
+    - checksVoidReturn: false
+      checksConditionals: true
+  no-shadow:
+    - off
+  '@typescript-eslint/no-shadow':
+    - error
+  '@typescript-eslint/no-this-alias':
+    - error
+  '@typescript-eslint/restrict-template-expressions':
+    - error
+    - allowAny: true
+  '@typescript-eslint/ban-ts-comment':
+    - error
+    - ts-ignore: allow-with-description
 
 # missing rules not found in eslint :
 # - object-shorthand-properties-first
+
+settings:
+  import/extensions:
+    - '.ts'
 
 env:
   browser: true,

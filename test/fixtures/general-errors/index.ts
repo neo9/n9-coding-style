@@ -51,14 +51,14 @@ getMessage2(objectSort as string);
 
 class A_Wrong_class_name {
 	// naming wrong
-	private static aField: string = '';
+	private static A_FIELD: string = '';
 	private a_Field: string = '';
 	public static anotherField: string = ''; // member ordering & naming wrong
 	public another_Field = ''; // typedef & naming wrong
 
 	public static aWrongFunctionStaticName() {
 		// naming wrong
-		return this.aField + this.anotherField;
+		return this.A_FIELD + this.anotherField;
 	}
 
 	public a_Wrong_instance_Function_Name() {
