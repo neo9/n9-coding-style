@@ -127,6 +127,7 @@ rules:
       message: for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.
   no-param-reassign:
     - error
+    - props: false
   no-continue:
     - off
   no-bitwise:
