@@ -1,3 +1,10 @@
+# [3.0.0-alpha.4](https://github.com/neo9/n9-coding-style/compare/3.0.0-alpha.3...3.0.0-alpha.4) (2022-01-12)
+
+
+### rules
+
+* Review rules against neo9 catalogue project ([4854adb](https://github.com/neo9/n9-coding-style/commit/4854adbc9815e5552ce31c32b68db319023eb3c0))
+
 # [3.0.0-alpha.3](https://github.com/neo9/n9-coding-style/compare/3.0.0-alpha.2...3.0.0-alpha.3) (2022-01-11)
 
 
