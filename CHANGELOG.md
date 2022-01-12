@@ -1,3 +1,31 @@
+# [3.0.0](https://github.com/neo9/n9-coding-style/compare/2.0.0...3.0.0) (2022-01-12)
+
+
+### eslint
+
+* Replace tslint with eslint with tests ([552f1e3](https://github.com/neo9/n9-coding-style/commit/552f1e3a00a0180069a4cc3f4d9c429df5e00b3d))
+
+### release
+
+* V 3.0.0-alpha.0 ([68964f8](https://github.com/neo9/n9-coding-style/commit/68964f8e4688a93263bb110d42dae3d08ea86599))
+* V 3.0.0-alpha.1 ([af86916](https://github.com/neo9/n9-coding-style/commit/af8691600287435dca73931a6f5ab1938aa2898a))
+* V 3.0.0-alpha.2 ([0f2acb6](https://github.com/neo9/n9-coding-style/commit/0f2acb6d0a830c7074eb4c60de94afc20f9cd135))
+* V 3.0.0-alpha.3 ([972c69a](https://github.com/neo9/n9-coding-style/commit/972c69a932376ee7bcdfe4a8172af0997dffad95))
+* V 3.0.0-alpha.4 ([d881352](https://github.com/neo9/n9-coding-style/commit/d881352ef65da1408dcc00cdc656a577b4a92d9f))
+
+### rules
+
+* Add rules to support empty functions and constructor in typescript ([a1b8a50](https://github.com/neo9/n9-coding-style/commit/a1b8a50fa6e14fa22233496d82d8125379ae823f))
+* Allow params properties reassignment ([4a63cb2](https://github.com/neo9/n9-coding-style/commit/4a63cb2f1220904aabdbeba8d52ddd52e9f8d624))
+* Review rules against n9-mongo-client ([d4fe14d](https://github.com/neo9/n9-coding-style/commit/d4fe14d9e24f3bf0101ee5c4c9b4bf75eba9dbc0))
+* Review rules against n9-node-routing ([df80449](https://github.com/neo9/n9-coding-style/commit/df80449b14450085ed82c82b624a9e3151ba6695))
+* Review rules against neo9 catalogue project ([fbf52fc](https://github.com/neo9/n9-coding-style/commit/fbf52fc63db4af73980c5c3957796951fa9e2695))
+
+### yarn
+
+* Fix eslint-plugin-simple-import-sort location to dependencies ([ac306ae](https://github.com/neo9/n9-coding-style/commit/ac306ae500c2ad9ce6f220cd49125677a4ab533f))
+* Update dependencies ([6108983](https://github.com/neo9/n9-coding-style/commit/6108983c803c908341a16230962ca43297881b85))
+
 # [3.0.0-alpha.4](https://github.com/neo9/n9-coding-style/compare/3.0.0-alpha.3...3.0.0-alpha.4) (2022-01-12)
 
 
