@@ -5,22 +5,36 @@ TSLint coding style inspired from [Airbnb coding style](https://github.com/airbn
 ## Usage
 
 ```bash
-yarn add tslint @neo9/n9-coding-style --dev
+yarn add @neo9/n9-coding-style --dev
 ```
 
-Add a `tslint.json` file in the root directory.
+Add a `.eslintrc.yaml` file in the root directory.
+
+```yaml
+extends:
+  - './node_modules/@neo9/n9-coding-style/.eslintrc.yaml'
+```
+
+Add a `lint` script to your `package.json` :
 
 ```json
 {
-	"extends": "@neo9/n9-coding-style"
+  ...
+  "lint": "eslint --config .eslintrc.yaml '{src,test}/**/*.ts'",
+  ...
 }
 ```
 
+Example of usage :
+
+- https://github.com/neo9/n9-node-routing
+- https://github.com/neo9/n9-mongo-client
+
 ## Auto fix errors
 
-TsLint can sometimes auto fix errors.
+EsLint can sometimes auto fix errors.
 You can use the local binary.
 
 ```bash
-./node_modules/.bin/tslint --fix
+npx eslint --fix '{src,test}/**/*.ts'
 ```
