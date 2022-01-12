@@ -251,4 +251,9 @@ function functionNoElseAfterReturn(): number {
 }
 functionNoElseAfterReturn();
 
+getMessage((l: string) => {
+	// return type not required
+	return l;
+});
+
 // TODO: add rxjs example

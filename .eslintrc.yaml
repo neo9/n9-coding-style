@@ -80,7 +80,7 @@ rules:
   no-loop-func:
     - off
   '@typescript-eslint/no-loop-func':
-    - error
+    - off
   '@typescript-eslint/triple-slash-reference':
     - error
     - path: never
@@ -91,7 +91,7 @@ rules:
   '@typescript-eslint/naming-convention': # https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/naming-convention.md
     - error
     - selector: default
-      format: ['camelCase']
+      format: ['camelCase'] # feature requested : https://github.com/typescript-eslint/typescript-eslint/issues/2244
       leadingUnderscore: 'allow'
       trailingUnderscore: 'forbid'
     - selector: memberLike
@@ -264,9 +264,8 @@ rules:
     - error
   '@typescript-eslint/no-this-alias':
     - error
-  '@typescript-eslint/restrict-template-expressions':
-    - error
-    - allowAny: true
+  '@typescript-eslint/restrict-template-expressions': # too restrictif with types unions
+    - off
   '@typescript-eslint/ban-ts-comment':
     - error
     - ts-ignore: allow-with-description
@@ -276,7 +275,15 @@ rules:
     - off
   '@typescript-eslint/explicit-function-return-type':
     - error
+    - allowTypedFunctionExpressions: true
+      allowHigherOrderFunctions: true
+      allowDirectConstAssertionInArrowFunctions: true
+      allowConciseArrowFunctionExpressionsStartingWithVoid: false
   no-useless-return:
+    - off
+  array-callback-return:
+    - off
+  no-case-declarations:
     - off
 
 # missing rules not found in eslint :
