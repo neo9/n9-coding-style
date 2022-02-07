@@ -1,3 +1,15 @@
+## [3.0.1](https://github.com/neo9/n9-coding-style/compare/3.0.0...3.0.1) (2022-02-07)
+
+
+### doc
+
+* Update readme with eslint example ([53f298c](https://github.com/neo9/n9-coding-style/commit/53f298c07838a62de5f6fb1af64a19c9cb5c2c5e))
+
+### rules
+
+* Add more paths to allow extraneous-dependencies ([5d6fcd0](https://github.com/neo9/n9-coding-style/commit/5d6fcd0244b81347730222caf8536f92e7b0dbb1))
+* Fix error level for no-console rule ([00435a9](https://github.com/neo9/n9-coding-style/commit/00435a98a9d8e6a2f19e2c19149e350b0da5cae2))
+
 # [3.0.0](https://github.com/neo9/n9-coding-style/compare/2.0.0...3.0.0) (2022-01-12)
 
 
