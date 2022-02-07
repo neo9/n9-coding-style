@@ -27,6 +27,8 @@ rules:
     - off
   no-unused-vars:
     - off
+  no-console:
+    - error
   '@typescript-eslint/no-unused-vars':
     - error
   '@typescript-eslint/member-ordering':
