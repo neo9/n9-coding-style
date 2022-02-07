@@ -224,6 +224,8 @@ rules:
     - devDependencies:
         - 'tests/**/*'
         - 'test/**/*'
+        - 'src/app/tests/**/*'
+        - 'src/app/test/**/*'
         - '**/*.test.*'
         - '**/*.spec.*'
   no-useless-constructor:
