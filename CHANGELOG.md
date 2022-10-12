@@ -1,3 +1,18 @@
+
+
+# [4.0.0](https://github.com/neo9/n9-coding-style/compare/3.0.1...4.0.0) (2022-10-12)
+
+
+### node
+
+* Drop support of NodeJS V12 ([4898bc1](https://github.com/neo9/n9-coding-style/commit/4898bc1326bcfa858e1b79b10c1b2b95ccf9f60c))
+
+### yarn
+
+* Upgrade all dependencies to latest version ([de918c7](https://github.com/neo9/n9-coding-style/commit/de918c77636996b5a359ef96db27635dd3894224))
+* Upgrade eslint-plugin-jsdoc for node 18 #16 ([da2b9c9](https://github.com/neo9/n9-coding-style/commit/da2b9c946d03cfe1bc93c5c12cf53e54e49cdd49)), closes [#16](https://github.com/neo9/n9-coding-style/issues/16)
+* Upgrade release-it to latest v 14.12.4 ([f7d3b9e](https://github.com/neo9/n9-coding-style/commit/f7d3b9e1adc3b9a3d326a79426fa4b6e5fd9eac9))
+
 ## [3.0.1](https://github.com/neo9/n9-coding-style/compare/3.0.0...3.0.1) (2022-02-07)
 
 
@@ -157,4 +172,3 @@
 
 
 ## [0.0.1](https://github.com/neo9/n9-coding-style/compare/v1.1.1...2.0.0-beta.0) (2019-02-11)
-
