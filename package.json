@@ -21,31 +21,31 @@
     "test:dev": "ava --no-worker-threads --verbose --color --serial --watch"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.9.0",
-    "@typescript-eslint/parser": "^5.9.0",
-    "eslint": "^8.6.0",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint": "^8.25.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-airbnb-typescript": "^16.1.0",
-    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsdoc": "^39.3.6",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-rxjs": "^5.0.0",
-    "eslint-plugin-simple-import-sort": "^7.0.0",
-    "release-it": "^14.12.4"
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-rxjs": "^5.0.2",
+    "eslint-plugin-simple-import-sort": "^8.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.0.1",
-    "@release-it/conventional-changelog": "^3.3.0",
-    "@types/eslint": "^8.2.2",
-    "@types/jest": "^27.4.0",
-    "@types/lodash": "^4.14.178",
-    "ava": "^4.0.1",
-    "husky": "^7.0.0",
+    "@commitlint/cli": "^17.1.2",
+    "@release-it/conventional-changelog": "^5.1.1",
+    "@types/eslint": "^8.4.6",
+    "@types/jest": "^29.1.2",
+    "@types/lodash": "^4.14.186",
+    "ava": "^4.3.3",
+    "husky": "^8.0.1",
     "lodash": "^4.17.21",
-    "prettier": "^2.3.0",
-    "rxjs": "^7.5.1",
-    "typescript": "^4.2.4"
+    "prettier": "^2.7.1",
+    "release-it": "^15.5.0",
+    "rxjs": "^7.5.7",
+    "typescript": "^4.8.4"
   },
   "peerDependencies": {
     "typescript": "^4.0.0"
