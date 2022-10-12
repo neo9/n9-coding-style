@@ -8,6 +8,9 @@
     "url": "git+https://github.com/neo9/n9-coding-style.git"
   },
   "type": "module",
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "scripts": {
     "format": "prettier --write *.*",
     "release": "export BABEL_DISABLE_CACHE=1 && release-it --ci",
