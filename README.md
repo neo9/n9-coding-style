@@ -1,6 +1,6 @@
 # Neo9 coding style
 
-TSLint coding style inspired from [Airbnb coding style](https://github.com/airbnb/javascript).
+ESLint coding style inspired from [Airbnb coding style](https://github.com/airbnb/javascript).
 
 :warning: Drop NodeJS 12 support stating with version 4
 
