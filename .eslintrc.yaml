@@ -7,6 +7,7 @@ plugins:
   - '@typescript-eslint'
   - simple-import-sort
   - rxjs
+  - eslint-plugin-sonarjs
 extends:
   - eslint:recommended
   - plugin:@typescript-eslint/eslint-recommended
@@ -79,6 +80,9 @@ rules:
   complexity:
     - error
     - max: 25
+  sonarjs/cognitive-complexity:
+    - error
+    - 10
   no-loop-func:
     - off
   '@typescript-eslint/no-loop-func':

@@ -40,3 +40,10 @@ You can use the local binary.
 ```bash
 npx eslint --fix '{src,test}/**/*.ts'
 ```
+
+## Comments on some rules
+
+| Rule                         | Comments                                                                                                                                                                                                                                                         |
+|------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| sonarjs/cognitive-complexity | An error is thrown if the complexity goes beyond 10 points. If it is too much of a challenge to do a refacto in one time, we suggest you override the configuration to whatever suits you and decrease it step by step. The default sonarjs configuration is 15. |                              |                                                                                                                                                                         |
+
