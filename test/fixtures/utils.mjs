@@ -12,7 +12,7 @@ export default class Utils {
 		for (const expectedError of expectedErrors) {
 			allRuleIds.push(...expectedError.ruleIds);
 		}
-		console.log(`Check starting, expting ${allRuleIds.length} errors to occurre ...`);
+		console.log(`Check starting, expecting ${allRuleIds.length} errors to occur ...`);
 		const esLint = new ESLint({
 			cwd: path.join(__dirname, folder),
 			overrideConfigFile: path.join(__dirname, '.eslintrc.yaml'),
