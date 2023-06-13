@@ -1,5 +1,24 @@
 
 
+# [5.0.0](https://github.com/neo9/n9-coding-style/compare/4.0.0...5.0.0) (2023-06-13)
+
+
+### changelog
+
+* Rename TSLint to ESLint ([5680416](https://github.com/neo9/n9-coding-style/commit/56804161b96b198d9bff94a943a8468056052b5a))
+
+### doc
+
+* Add nodejs version drop information ([9359976](https://github.com/neo9/n9-coding-style/commit/935997683c0675940a036d07bfab975721919b38))
+
+### node
+
+* Add support of node 18 and 20 and drop node 14 ([d448561](https://github.com/neo9/n9-coding-style/commit/d4485614199979c1f1765296335d9b48f94d2c37))
+
+### release
+
+* Fix release script ([3bfe7fc](https://github.com/neo9/n9-coding-style/commit/3bfe7fc9064c0dd687ca6601eb3793530d855426))
+
 # [4.0.0](https://github.com/neo9/n9-coding-style/compare/3.0.1...4.0.0) (2022-10-12)
 
 
