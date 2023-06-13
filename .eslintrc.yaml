@@ -125,6 +125,10 @@ rules:
     - off
   jsdoc/require-returns:
     - off # Change is too big with tslint version of n9-coding-style
+  jsdoc/tag-lines:
+    - error
+    - any
+    - startLines: 1
   jsdoc/check-param-names:
     - error
     - checkRestProperty: false
