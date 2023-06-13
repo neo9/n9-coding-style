@@ -13,9 +13,11 @@
   },
   "scripts": {
     "format": "prettier --write *.*",
-    "release": "export BABEL_DISABLE_CACHE=1 && release-it --ci",
-    "release:dry": "export BABEL_DISABLE_CACHE=1 && release-it --ci --dry-run=true",
+    "release": "release-it",
+    "release:dry": "release-it --dry-run",
+    "build:changelog": "conventional-changelog -i CHANGELOG.md -s -p jscs -r 0",
     "post:release": "echo Successfully released $npm_package_version",
+    "preversion": "yarn run test",
     "prepare": "husky install",
     "test": "ava --no-worker-threads --verbose --serial",
     "test:dev": "ava --no-worker-threads --verbose --color --serial --watch"
