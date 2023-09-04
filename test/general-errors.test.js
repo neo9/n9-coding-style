@@ -49,7 +49,7 @@ test.serial(`load config index.ts in ESLint to validate all rules are correct`, 
 			line: 14,
 			ruleIds: [
 				'prefer-template', // Unexpected string concatenation
-				'@typescript-eslint/restrict-plus-operands', // Operands of '+' operation must either be both strings or both numbers.
+				'@typescript-eslint/restrict-plus-operands', // Operands of '+' operations must be a number or string, allowing a string + `any`. Got `string` + `number`.
 			],
 		},
 		{
@@ -321,6 +321,12 @@ test.serial(`load config index.ts in ESLint to validate all rules are correct`, 
 			line: 184,
 			ruleIds: [
 				'@typescript-eslint/ban-types', // Don't use `{}` as a type. `{}` actually means "any non-nullish value".
+			],
+		},
+		{
+			line: 187,
+			ruleIds: [
+				'@typescript-eslint/ban-types', // Don't use `Function` as a type. The `Function` type accepts any function-like value
 			],
 		},
 		{
