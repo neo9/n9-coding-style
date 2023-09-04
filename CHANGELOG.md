@@ -1,5 +1,12 @@
 
 
+# [5.1.0](https://github.com/neo9/n9-coding-style/compare/5.0.0...5.1.0) (2023-09-04)
+
+
+### yarn
+
+* Upgrade dependencies #23 ([af456ec](https://github.com/neo9/n9-coding-style/commit/af456ecdc62530221488fa465aaa913bb0c6fbae)), closes [#23](https://github.com/neo9/n9-coding-style/issues/23)
+
 # [5.0.0](https://github.com/neo9/n9-coding-style/compare/4.0.0...5.0.0) (2023-06-13)
 
 
