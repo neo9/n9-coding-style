@@ -10,7 +10,7 @@ test.serial(`Check JSDoc rules`, async (t) => {
 		// },
 		{
 			line: 12,
-			ruleIds: ['jsdoc/newline-after-description'],
+			ruleIds: ['jsdoc/tag-lines'],
 		},
 		{
 			line: 15,

@@ -125,6 +125,10 @@ rules:
     - off
   jsdoc/require-returns:
     - off # Change is too big with tslint version of n9-coding-style
+  jsdoc/tag-lines:
+    - error
+    - any
+    - startLines: 1
   jsdoc/check-param-names:
     - error
     - checkRestProperty: false
@@ -289,6 +293,14 @@ rules:
     - off
   no-case-declarations:
     - off
+  '@typescript-eslint/restrict-plus-operands':
+    - error
+    - allowAny: true
+      allowBoolean: false
+      allowNullish: false
+      allowNumberAndString: false
+      allowRegExp: false
+      skipCompoundAssignments: false
 
 # missing rules not found in eslint :
 # - object-shorthand-properties-first

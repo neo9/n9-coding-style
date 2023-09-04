@@ -2,7 +2,7 @@
 
 ESLint coding style inspired from [Airbnb coding style](https://github.com/airbnb/javascript).
 
-:warning: Drop NodeJS 12 support stating with version 4
+:warning: Drop NodeJS 14 support stating with version 5
 
 ## Usage
 

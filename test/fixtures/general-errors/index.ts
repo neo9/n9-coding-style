@@ -11,7 +11,7 @@ const a = new A(); // ok with no error
 
 function getMessage(suffix) {
 	// parameter type and missing return type
-	return 'Hello, World' + suffix; // should use template string
+	return 'Hello, World' + suffix + 5; // should use template string
 }
 
 const message = getMessage('!'); // message is never used
