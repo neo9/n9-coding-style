@@ -1,5 +1,16 @@
 
 
+## [5.1.1](https://github.com/neo9/n9-coding-style/compare/5.1.0...5.1.1) (2023-09-04)
+
+
+### github
+
+* Add dependabot v2 configuration ([3b82b4e](https://github.com/neo9/n9-coding-style/commit/3b82b4eb40b6978a5cd11d4aab904ec98bf4569d))
+
+### yarn
+
+* Fix typescript peer dependency declaration ([423f4d2](https://github.com/neo9/n9-coding-style/commit/423f4d2edee0c5cc772f3d8fad12165d72ab1aa6))
+
 # [5.1.0](https://github.com/neo9/n9-coding-style/compare/5.0.0...5.1.0) (2023-09-04)
 
 
