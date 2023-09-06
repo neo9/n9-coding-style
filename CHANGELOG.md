@@ -1,5 +1,17 @@
 
 
+## [5.1.2](https://github.com/neo9/n9-coding-style/compare/5.1.1...5.1.2) (2023-09-06)
+
+
+### github
+
+* Fix dependabot configuration ([c219751](https://github.com/neo9/n9-coding-style/commit/c2197513d4e394855df37b41b1674c15c14cc4f8))
+* Remove dependabot configuration not needed for security updates ([c30c35a](https://github.com/neo9/n9-coding-style/commit/c30c35a4bd2ff7b91c9230fe80aa427b061ad35e))
+
+### rules
+
+* Disable rule no-redundant-type-constituents ([1663c62](https://github.com/neo9/n9-coding-style/commit/1663c624f75c2c89b2b707fa21155b6c6600f460))
+
 ## [5.1.1](https://github.com/neo9/n9-coding-style/compare/5.1.0...5.1.1) (2023-09-04)
 
 
