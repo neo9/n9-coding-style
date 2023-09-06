@@ -301,9 +301,8 @@ rules:
       allowNumberAndString: false
       allowRegExp: false
       skipCompoundAssignments: false
-
-# missing rules not found in eslint :
-# - object-shorthand-properties-first
+  '@typescript-eslint/no-redundant-type-constituents':
+    - off
 
 env:
   browser: true,

@@ -44,7 +44,8 @@ mainLoop: for (const value of Object.keys({})) {
 	}
 }
 
-function fctWithCallBack(fct: () => number): number {
+// no-redundant-type-constituents is disabled
+function fctWithCallBack(fct: () => number): number | any {
 	return fct();
 }
 
