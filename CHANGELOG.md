@@ -1,5 +1,17 @@
 
 
+# [6.0.0-rc.0](https://github.com/neo9/n9-coding-style/compare/5.1.2...6.0.0-rc.0) (2023-10-20)
+
+
+### node
+
+* Drop support of version 16 ([73b0bb8](https://github.com/neo9/n9-coding-style/commit/73b0bb86a40f8f022bd53aec8cbb37ea4d9e73ca))
+
+### yarn
+
+* Add lint script ([2e7cba6](https://github.com/neo9/n9-coding-style/commit/2e7cba6742c11241abea79eada6d9a98ae64f723))
+* Upgrade dependencies and change tsconfig management ([684fe8c](https://github.com/neo9/n9-coding-style/commit/684fe8c4e20071a9c6223ae0ab602adf34d0c950))
+
 ## [5.1.2](https://github.com/neo9/n9-coding-style/compare/5.1.1...5.1.2) (2023-09-06)
 
 

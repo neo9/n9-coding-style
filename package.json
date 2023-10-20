@@ -1,6 +1,6 @@
 {
   "name": "@neo9/n9-coding-style",
-  "version": "5.1.2",
+  "version": "6.0.0-rc.0",
   "description": "Set of rules ready to use in any JS project, based on eslint",
   "keywords": [
     "linter",
