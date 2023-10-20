@@ -1,55 +1,70 @@
 {
   "name": "@neo9/n9-coding-style",
   "version": "5.1.2",
+  "description": "Set of rules ready to use in any JS project, based on eslint",
+  "keywords": [
+    "linter",
+    "eslint",
+    "node"
+  ],
+  "license": "GPL-3.0-or-later",
   "main": ".eslintrc.yaml",
-  "license": "MIT",
+  "scripts": {
+    "build": "echo 'Nothing to build'",
+    "format": "prettier --write *.*",
+    "test:dev": "ava --no-worker-threads --verbose --color --serial --watch",
+    "test": "ava --no-worker-threads --verbose --serial",
+    "release": "release-it",
+    "release:pre-release": "release-it --preRelease",
+    "release:dry": "release-it --dry-run"
+  },
+  "author": {
+    "name": "Benjamin DANIEL",
+    "email": "benjamin.daniel@neo9.fr"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/neo9/n9-coding-style.git"
   },
+  "homepage": "https://github.com/neo9/n9-coding-style#readme",
   "type": "module",
   "engines": {
-    "node": ">=16.20.2"
-  },
-  "scripts": {
-    "format": "prettier --write *.*",
-    "release": "release-it",
-    "release:dry": "release-it --dry-run",
-    "build:changelog": "conventional-changelog -i CHANGELOG.md -s -p jscs -r 0",
-    "post:release": "echo Successfully released $npm_package_version",
-    "preversion": "yarn run test",
-    "prepare": "husky install",
-    "test": "ava --no-worker-threads --verbose --serial",
-    "test:dev": "ava --no-worker-threads --verbose --color --serial --watch"
+    "node": ">= 16.20"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.5.0",
-    "@typescript-eslint/parser": "^6.5.0",
-    "eslint": "^8.48.0",
+    "@typescript-eslint/eslint-plugin": "^6.8.0",
+    "@typescript-eslint/parser": "^6.8.0",
+    "eslint": "^8.51.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^17.1.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.28.1",
-    "eslint-plugin-jsdoc": "^46.5.1",
-    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-jsdoc": "^46.8.2",
+    "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-rxjs": "^5.0.3",
     "eslint-plugin-simple-import-sort": "^10.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.7.1",
-    "@release-it/conventional-changelog": "^7.0.1",
-    "@types/eslint": "^8.44.2",
-    "@types/jest": "^29.5.4",
-    "@types/lodash": "^4.14.197",
+    "@commitlint/cli": "^18.0.0",
+    "@release-it/conventional-changelog": "^7.0.2",
+    "@types/eslint": "^8.44.6",
+    "@types/jest": "^29.5.6",
+    "@types/lodash": "^4.14.200",
     "ava": "^5.3.1",
-    "husky": "^8.0.3",
+    "husky": "^4.3.8",
     "lodash": "^4.17.21",
     "prettier": "^3.0.3",
-    "release-it": "^16.1.5",
+    "release-it": "^16.2.1",
     "rxjs": "^7.8.1",
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
-    "typescript": ">=4.5.0"
+    "typescript": ">=5.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npm run format && npm run lint"
+    }
   }
 }

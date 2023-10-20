@@ -1,4 +1,5 @@
 import test from 'ava';
+
 import Utils from './fixtures/utils.mjs';
 
 test.serial(`Check rxjs rules`, async (t) => {

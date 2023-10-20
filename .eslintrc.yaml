@@ -2,7 +2,7 @@ parser: '@typescript-eslint/parser'
 parserOptions:
   tsconfigRootDir: ./
   project:
-    - tsconfig.json
+    - ./node_modules/@neo9/n9-coding-style/tsconfig-used-by-eslint.json
 plugins:
   - '@typescript-eslint'
   - simple-import-sort
