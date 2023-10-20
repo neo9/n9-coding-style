@@ -11,6 +11,7 @@
   "main": ".eslintrc.yaml",
   "scripts": {
     "build": "echo 'Nothing to build'",
+    "lint": "prettier --check '**/*'",
     "format": "prettier --write *.*",
     "test:dev": "ava --no-worker-threads --verbose --color --serial --watch",
     "test": "ava --no-worker-threads --verbose --serial",
