@@ -96,16 +96,18 @@ rules:
       format: ['camelCase'] # feature requested : https://github.com/typescript-eslint/typescript-eslint/issues/2244
       leadingUnderscore: 'allow'
       trailingUnderscore: 'forbid'
-    - selector: memberLike
+    - selector: memberLike # accessor, enumMember, method, parameterProperty, property
       modifiers: ['static']
       format: ['UPPER_CASE']
-    - selector: memberLike
+    - selector: memberLike # accessor, enumMember, method, parameterProperty, property
       modifiers: ['private', 'static']
       format: ['camelCase']
-    - selector: typeLike
-      format: ['PascalCase']
     - selector: enumMember
       format: ['UPPER_CASE']
+    - selector: typeLike # class, enum, interface, typeAlias, typeParameter
+      format: ['PascalCase']
+    - selector: import
+      format: ['PascalCase']
   sort-imports:
     - off # disable eslint default sort import rule because it is on import name and not on import files
   simple-import-sort/imports:

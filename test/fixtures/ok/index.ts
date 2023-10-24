@@ -1,3 +1,5 @@
+import * as Mockito from 'ts-mockito';
+
 function getMessage(suffix: string): string {
 	return `Hello, World${suffix}`;
 }
@@ -61,3 +63,7 @@ class AClass2 {
 }
 
 new AClass2('s').setProp({ a: '22' });
+
+Mockito.when(() => {
+	return;
+});
