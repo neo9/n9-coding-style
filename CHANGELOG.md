@@ -1,5 +1,13 @@
 
 
+# [6.0.0-rc.2](https://github.com/neo9/n9-coding-style/compare/6.0.0-rc.1...6.0.0-rc.2) (2023-10-24)
+
+
+### yarn
+
+* Fix yarn.lock file ([0478769](https://github.com/neo9/n9-coding-style/commit/04787698467137c01966f17f49b935775f11d626))
+* Upgrade typescript-eslint to version 6.9.0 ([c7042ab](https://github.com/neo9/n9-coding-style/commit/c7042ab60db4b4403511c008ef07564219066ea5))
+
 # [6.0.0-rc.1](https://github.com/neo9/n9-coding-style/compare/6.0.0-rc.0...6.0.0-rc.1) (2023-10-24)
 
 
