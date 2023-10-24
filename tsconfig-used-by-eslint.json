@@ -1,20 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "compileOnSave": true,
+  "extends": "../../../tsconfig.json",
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es2022",
-    "outDir": "dist",
-    "moduleResolution": "node",
-    "skipLibCheck": true,
-    "emitDecoratorMetadata": true,
-    "declaration": true,
-    "experimentalDecorators": true,
-    "noImplicitAny": true,
-    "sourceMap": true,
-    "lib": ["es2023"],
-    "strict": false,
-    "useDefineForClassFields": false
+    "noEmit": true
   },
   "include": ["../../../src", "../../../test"]
 }
