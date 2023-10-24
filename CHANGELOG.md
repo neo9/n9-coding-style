@@ -1,5 +1,12 @@
 
 
+# [6.0.0-rc.1](https://github.com/neo9/n9-coding-style/compare/6.0.0-rc.0...6.0.0-rc.1) (2023-10-24)
+
+
+### tsconfig
+
+* Fix tsconfig used in project by adding extends and noEmit ([d3c7d02](https://github.com/neo9/n9-coding-style/commit/d3c7d028a56d65bb44472423213b80b578af9bb5))
+
 # [6.0.0-rc.0](https://github.com/neo9/n9-coding-style/compare/5.1.2...6.0.0-rc.0) (2023-10-20)
 
 
