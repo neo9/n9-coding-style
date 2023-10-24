@@ -107,7 +107,10 @@ rules:
     - selector: typeLike # class, enum, interface, typeAlias, typeParameter
       format: ['PascalCase']
     - selector: import
-      format: ['PascalCase']
+      format: null
+      custom:
+        match: true
+        regex: ^_|(A-Z[a-z]+)+|[a-z]+$
   sort-imports:
     - off # disable eslint default sort import rule because it is on import name and not on import files
   simple-import-sort/imports:
