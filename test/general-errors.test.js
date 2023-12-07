@@ -421,6 +421,12 @@ test.serial(`load config index.ts in ESLint to validate all rules are correct`, 
 				'no-else-return', //  Unnecessary 'else' after 'return'
 			],
 		},
+		{
+			line: 260,
+			ruleIds: [
+				'@typescript-eslint/naming-convention', // Object Literal Property name `MySecondProperty` must match one of the following formats: camelCase
+			],
+		},
 	];
 
 	await Utils.checkErrors(t, 'general-errors', expectedErrors);
