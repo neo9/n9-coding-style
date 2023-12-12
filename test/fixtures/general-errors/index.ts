@@ -256,4 +256,13 @@ getMessage((l: string) => {
 	return l;
 });
 
+const objectNaming: any = {
+	'MySecondProperty': null,
+	'my-property': 'test',
+	'my.property': 'test',
+	'myProperty': null,
+	'mysecondproperty': null,
+};
+getMessage(objectNaming);
+
 // TODO: add rxjs example
