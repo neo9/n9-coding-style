@@ -1,5 +1,12 @@
 
 
+# [6.1.0-rc.1](https://github.com/neo9/n9-coding-style/compare/6.0.0...6.1.0-rc.1) (2023-12-13)
+
+
+### rules
+
+* Disable format requirement when property needs quotes (#25) ([61f98d6](https://github.com/neo9/n9-coding-style/commit/61f98d6e77fe88ae39f8f243b607c0cc93c715c8)), closes [#25](https://github.com/neo9/n9-coding-style/issues/25)
+
 # [6.0.0](https://github.com/neo9/n9-coding-style/compare/6.0.0-rc.3...6.0.0) (2023-11-14)
 
 # [6.0.0-rc.3](https://github.com/neo9/n9-coding-style/compare/6.0.0-rc.2...6.0.0-rc.3) (2023-10-24)
