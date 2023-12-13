@@ -1,5 +1,7 @@
 
 
+# [6.1.0](https://github.com/neo9/n9-coding-style/compare/6.1.0-rc.1...6.1.0) (2023-12-13)
+
 # [6.1.0-rc.1](https://github.com/neo9/n9-coding-style/compare/6.0.0...6.1.0-rc.1) (2023-12-13)
 
 
